@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - RUNairlines</title>
+    <link rel="stylesheet" href="styles_pagamento.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./images/logo.png" alt="logo" id="logo">
+            <div class="user-menu">
+                <img src="./images/perfil.png" alt="" class="account-icon" id="accountIcon">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <button id="checkinButton">Fazer Check-in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="payment-info">
+            <h2 id="route"></h2>
+            <div id="summary">
+                <p>Assentos: <span id="selected-seats"></span></p>
+                <p>Bagagens: <span id="baggage-count"></span></p>
+            </div>
+            <label for="payment-method">Forma de pagamento:</label>
+            <select id="payment-method">
+                <option value="pix">PIX</option>
+                <option value="credit-card">Crédito</option>
+                <option value="debit-card">Débito</option>
+            </select>
+
+            <div id="installments-container" style="display: none;">
+                <label for="installments">Parcelas:</label>
+                <select id="installments">
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                </select>
+            </div>
+            <p id="total">Total: <span id="total-price"></span></p>
+            <button id="pay-btn">Pagar</button>
+            <p id="cod_subs"></p>
+            <a href="menu.html" id="a"></a>
+        </div>
+    </main>
+
+    <script src="script_pagamento.js"></script>
+</body>
+</html>

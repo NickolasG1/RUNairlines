@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images8.alphacoders.com/500/thumb-1920-500413.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-wrapper {
+    text-align: center;
+}
+
+.login-container {
+    background-color: rgb(0, 71, 163, 0.80);
+    padding: 35px 45px;
+    border-radius: 30px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container label {
+    color: white;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 125px;
+    margin-right: 5px; 
+}
+
+.login-container input {
+    width: 30vh; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+.login-container h2 {
+    color: #ff9900;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.login-container button {
+    width: 30vh;
+    padding: 20px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block; 
+    margin-top: 40px;
+}
+
+.login-container button:hover {
+    background-color: #cc7a00;
+}
+
+.error-message {
+    color: rgb(255, 135, 135);
+    font-size: 14px;
+}
+
+#logo{
+    width: 300px;
+    margin-bottom: 20px;
+}

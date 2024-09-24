@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - RUNairlines</title>
+    <link rel="stylesheet" href="styles_assentos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./images/logo.png" alt="logo" id="logo">
+            <div class="user-menu">
+                <img src="./images/perfil.png" alt="" class="account-icon" id="accountIcon">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <button id="checkinButton">Fazer Check-in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="option">
+        <div class="price-info">
+            <span>Econômico (R$1.000): <span class="economico-color"></span></span>
+            <span>Premium (R$1.500): <span class="premium-color"></span></span>
+            <span>Executiva (R$2.500): <span class="executiva-color"></span></span>
+        </div>
+        <div id="obs">
+        <span>Obs: Todos têm direito <br>a uma bagagem de mão.</span>
+    </div>
+    </div>
+    <div class="corpo">
+        <div class="left">
+            <div class="seat-group economica">
+                <button id="A1" class="seat">A1</button>
+                <button id="A2" class="seat">A3</button>
+                <button id="A3" class="seat">A5</button>
+                <button id="A4" class="seat">A7</button>
+            </div>
+                <div class="seat-group economica">
+                <button id="A5" class="seat">A2</button>
+                <button id="A6" class="seat">A4</button>
+                <button id="A7" class="seat">A6</button>
+                <button id="A8" class="seat">A8</button>
+            </div>
+            <div class="amargin"></div>
+            <div class="seat-group premium">
+                <button id="B1" class="seat">B1</button>
+                <button id="B2" class="seat">B3</button>
+                <button id="B3" class="seat">B5</button>
+                <button id="B4" class="seat">B7</button>
+            </div>
+            <div class="seat-group premium">
+                <button id="B5" class="seat">B2</button>
+                <button id="B6" class="seat">B4</button>
+                <button id="B7" class="seat">B6</button>
+                <button id="B8" class="seat">B8</button>
+            </div>
+            <div class="amargin"></div>
+            <div class="seat-group executiva">
+                <button id="C1" class="seat">C1</button>
+                <button id="C2" class="seat">C3</button>
+                <button id="C3" class="seat">C5</button>
+                <button id="C4" class="seat">C7</button>
+            </div>
+            <div class="seat-group executiva">
+                <button id="C5" class="seat">C2</button>
+                <button id="C6" class="seat">C4</button>
+                <button id="C7" class="seat">C6</button>
+                <button id="C8" class="seat">C8</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="destiny">
+                <h1 id="saidah1"></h1>
+                <span style="font-size: 50px;">⇆</span>
+                <h1 id="destinoh1"></h1>
+            </div>
+            <div class="final">
+                <h2>+R$100,00 Cada Bagagem Extra - Máx.10</h2>
+                <label>
+                    Número de bagagens extra: 
+                    <input type="number" id="bagagens" value="0" min="0" max="10">
+                </label>
+                <button id="finalizar">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+    <script src="script_assentos.js"></script>
+</body>
+</html>

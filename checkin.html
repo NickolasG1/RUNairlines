@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - RUNairlines</title>
+    <link rel="stylesheet" href="styles_checkin.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./images/logo.png" alt="logo" id="logo">
+            <div class="user-menu">
+                <img src="./images/perfil.png" alt="" class="account-icon" id="accountIcon">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <button id="checkinButton">Fazer Check-in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="checkin_main">
+            <h2 id="title">Fazer Check-in</h2>
+            <p>Digite o código de Check-in:</p>
+            <input id="checkin_caixa" type="text" placeholder="Insira seu código">
+            <button id="veri-btn">Verificar</button>
+            <a href="menu.html">Voltar para tela inicial.</a>
+            <p id="verification-result" class="verification-result"></p>
+        </div>
+    </main>
+
+    <script src="script_checkin.js"></script>
+</body>
+</html>

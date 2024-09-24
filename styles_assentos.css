@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://babel.ua/static/content/cdu6y87t/thumbs/1200x630/0/7e/5ba84bfdbe3f1a73d16b56c5c6ce17e0.jpeg?v=0575');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: rgb(0, 71, 163);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content #logo{
+    width: 150px;
+    height: 40px;
+}
+
+.company-name {
+    color: #ff9900;
+    font-size: 28px;
+    margin: 0;
+}
+
+.company-subname {
+    color: white;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.account-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    width: 150px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdown-menu #checkinButton {
+    width: 100%;
+    color: #003366;
+    text-decoration: none;
+    font-size: small;
+    border: 2px solid #000;
+    border-color: #003366;
+}
+
+
+.dropdown-menu #checkinButton:hover {
+    background-color: hsl(217, 100%, 90%);
+    cursor: pointer;
+}
+
+
+.option {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    position: relative;
+}
+
+.price-info {
+    margin-top: 10px;
+}
+
+.price-info span {
+    margin: 0 20px;
+}
+
+#obs{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.555);
+}
+
+#op{
+    padding-left: 50px;
+    
+}
+
+.economico-color {
+    background-color: rgb(0, 81, 255);
+    padding: 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.premium-color {
+    background-color: rgb(0, 153, 255);
+    padding: 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.executiva-color {
+    background-color: darkorange;
+    padding: 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.corpo{
+    display: flex;
+    width: 98%;
+    height: 95%;
+}
+.left {
+    display: flex;
+    margin: 30px auto;
+    width: 60%;
+    justify-content: center;
+    align-items: center; 
+}
+
+.seat-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.amargin{
+    margin-right: 100px;
+}
+
+.seat-group button {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.economica button {
+    background-color: rgb(16, 80, 255);
+    color: white;
+}
+
+.economica button:hover {
+    background-color: rgb(12, 57, 182);
+}
+
+
+.premium button {
+    background-color: rgb(0, 132, 255);
+    color: white;
+}
+
+.premium button:hover {
+    background-color: rgb(0, 96, 185);
+}
+
+.executiva button {
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+.executiva button:hover {
+    background-color: rgb(182, 82, 0);
+}
+
+.seat.selected {
+    background-color: rgb(97, 79, 177);
+}
+
+.right{
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    display:flexbox;
+}
+
+.destiny{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+    height: 50%;
+    color: #003366;
+    border-color: #003366;
+    border-radius: 30px;
+    width: 60%;
+    height: 35%;
+    margin-left: 20%;
+    margin-top: 16%;
+}
+
+
+
+.final{
+    padding: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.final button{
+    background-color: #2a79d4;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 30px;
+    border: none;
+}
+
+.final button:hover{
+    background-color: #175194;
+}
+
+.final label{
+    display: flex;
+    border: 2px solid #000;
+    border-color: #003366;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #003366;
+    justify-content: center;
+    align-items: center;
+    
+}
+.final label input{
+    margin-left: 20px;
+    border: 2px solid #000;
+    border-color: #003366;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #003366;
+    width: 40px;
+    text-align: center;
+    
+}
+
+.final h2{
+    color: #003366;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}

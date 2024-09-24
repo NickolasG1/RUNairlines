@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://plus.unsplash.com/premium_photo-1661952798931-14d398307ee2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWlycGxhbmUlMjB3aW5nfGVufDB8fDB8fHwwhttps://static.vecteezy.com/system/resources/previews/001/226/748/large_2x/colorful-sunset-sky-free-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(0, 71, 163);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content #logo{
+    width: 150px;
+    height: 40px;
+}
+
+.company-name {
+    color: #ff9900;
+    font-size: 28px;
+    margin: 0;
+}
+
+.company-subname {
+    color: white;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.account-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    width: 150px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdown-menu #checkinButton {
+    width: 100%;
+    color: #003366;
+    text-decoration: none;
+    font-size: small;
+    border: 2px solid #000;
+    border-color: #003366;
+}
+
+
+.dropdown-menu #checkinButton:hover {
+    background-color: hsl(217, 100%, 90%);
+    cursor: pointer;
+}
+
+
+.checkin_main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    margin-top: 35%;
+    border-radius: 50px;
+    border: 2px solid;
+    border-color: #003366;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+
+#checkin_caixa{
+    border-radius: 30px;
+    border: 2px solid;
+    width: 50vh;
+    height: 20px;
+    text-align: center;
+}
+
+#veri-btn{
+    background-color: #ff9900;
+    color: #000;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 13vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#title{
+    color: #003366;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#veri-btn:hover{
+    background-color: #ca7900;
+    cursor: pointer;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verification-result {
+    margin-top: 15px; 
+    height: 40px; 
+    transition: opacity 0.3s;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+.verification-result.show {
+    opacity: 1;
+}
+
+a {
+    color: #3498db; 
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+

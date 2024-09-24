@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - RUNairlines</title>
+    <link rel="stylesheet" href="styles_menu.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./images/logo.png" alt="logo" id="logo">
+            <div class="user-menu">
+                <img src="./images/perfil.png" alt="" class="account-icon" id="accountIcon">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <button id="checkinButton">Fazer Check-in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Para onde você quer ir?</h2>
+        <div class="travel-form">
+            <div class="location-selection">
+                <select id="departure" class="location-select">
+                    <option value="">Local de saída</option>
+                </select>
+                <span>⇆</span>
+                <select id="destination" class="location-select">
+                    <option value="">Local do destino</option>
+                </select>
+            </div>
+            <button id="searchButton" class="search-button">Comprar Passagens</button>
+        </div>
+    </main>
+    
+    <script src="script_menu.js"></script>
+</body>
+</html>
